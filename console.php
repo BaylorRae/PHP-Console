@@ -4,8 +4,8 @@
 // Allow easy changing of delay
 preg_match('/delay=(\d+)?/', $argv[1], $matches);
 $delay = (isset($matches[1])) ? $matches[1] : 5;
-if( $delay == 0 ) {
-  echo "\nWARNING: Delay cannot be 0 seconds\n";
+if( $delay < 1 ) {
+  echo "\nWARNING: Delay cannot be less than 1 second\n";
   echo "switching delay to 1 second\n\n";
   $delay = 1;
 }elseif( $delay > 60 ) {
@@ -26,8 +26,7 @@ echo "\n\n## Watching for changes in console.txt ##";
 
 $time = time();
 
-$i = 1;
-while( $i > 0 ) {
+while( 1 > 0 ) {
   get_content();
     
   // Only allow idle for 10 minutes
