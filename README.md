@@ -1,9 +1,9 @@
-<iframe src="http://www.screenr.com/embed/uUj" width="650" height="396" frameborder="0"></iframe>
-
 ## PHP Console
-This is a small thing that I made to make php debugging a little easier. I made it because my app was dealing with a lot of redirects, and I wanted to log information without it being erased after the redirect.
+This is a small script that I wrote to make PHP debugging a little easier. I made it because my app was dealing with a lot of redirects, and I wanted to log information without it being erased after the redirect.
 
-Everything is stored in a txt file that gets created in the same directory as `console.php`
+Here's a [video](http://www.screenr.com/uUj) that explains how to use it.
+
+Everything is stored in a text file that gets created in the same directory as `console.php`.
 
 ## Usage
 The first thing to do is make sure `console.php` is executable. And then run it in Terminal.
