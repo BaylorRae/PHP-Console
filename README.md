@@ -4,9 +4,14 @@ This is a small thing that I made to make php debugging a little easier. I made 
 Everything is stored in a txt file that gets created in the same directory as `console.php`
 
 ## Usage
-The first thing to do is make sure `console.php` is executable.
+The first thing to do is make sure `console.php` is executable. And then run it in Terminal.
 
     chmod +x console.php
+    ./console.php
+    
+By default `console.php` will reload the text file every 5 seconds. But you can change the time like this
+
+    ./console.php delay=1
     
 Then from your file include `console.class.php` and add logs with the following syntax.
 
