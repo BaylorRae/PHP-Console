@@ -8,9 +8,9 @@ class Console {
   
   private static function get_file() {
     if( self::$file === null )
-      $file = fopen(self::$filename, 'a');
+      self::$file = fopen(self::$filename, 'a');
       
-    return $file;
+    return self::$file;
   }
   
   private static function add_time() {
